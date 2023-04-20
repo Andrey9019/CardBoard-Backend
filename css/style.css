@@ -69,7 +69,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* header */
 
 .header-nav {
