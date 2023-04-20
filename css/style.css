@@ -1,0 +1,226 @@
+:root {
+  /* color  */
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-Text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: #2e2f4266;
+  --hero-background: #2e2f42b3;
+  --light-background: #ffffff;
+  --modal-background: #fcfcfc;
+
+  /*
+  1--color-iris: #4d5ae5;
+	2--color-ocean: #404bbf;
+	3--color-navy-blue: #2e2f42;
+	4--color-green: #31d0aa;
+	5--color-slate: #434455;
+	6--color-light-slate: #8e8f99;
+	7--color-cornflower: #e7e9fc;
+	8--color-cloud: #f4f4fd;
+	9--color-navy-blue-modal: #2e2f42;
+	0--color-grey: #2e2f42;
+	11--color-white: #ffffff;
+	12--color-dairy: #fcfcfc;*/
+}
+
+body {
+  background-color: var(--light-background);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 16px;
+  color: var(--text);
+}
+
+/* logo-style */
+
+.logo {
+  color: var(--primary-brand);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-style-1 {
+  color: var(--primary-brand);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-header {
+  color: var(--dark);
+}
+.logo-footer {
+  color: var(--light);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* header */
+
+.header-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.header-address {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+  color: var(--text);
+  font-style: normal;
+}
+/* main */
+
+/* hero */
+.hero {
+  background-color: var(--dark);
+  text-align: center;
+}
+.hero-txt {
+  color: var(--light-background);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+/* section 2 */
+.section-listen {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.section-listen-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+/* section3 */
+
+/* section4 */
+
+.section {
+  color: var(--dark);
+}
+
+.team {
+  background-color: var(--light);
+}
+.section-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.section-team-item {
+  background-color: var(--light-background);
+}
+.section-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.section-name-prof {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+/* footer */
+.footer {
+  background-color: var(--dark);
+}
+.footer-txt {
+  color: var(--light);
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--pressed-state);
+}
+
+.list {
+  list-style: none;
+}
+/* style button */
+
+.hero-button,
+.hero-button-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: var(--light-background);
+  background-color: var(--primary-brand);
+}
+.hero-button {
+  line-height: 1.5;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus,
+.hero-button-text:hover,
+.hero-button-text:focus {
+  background-color: var(--pressed-state);
+}
+
+.btn-nav-portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  cursor: pointer;
+}
+.btn-nav-portfolio:hover,
+.btn-nav-portfolio:focus {
+  color: var(--light-background);
+  background-color: var(--pressed-state);
+}
+
+/* portfolio */
+.listen-project {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.listen-project-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
