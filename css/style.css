@@ -51,6 +51,7 @@ p {
 }
 img {
   vertical-align: bottom;
+  display: block;
 }
 
 /* logo-style */
@@ -95,12 +96,14 @@ img {
 }
 /* header */
 .header-flex {
-  display: inline-flex;
+  justify-content: space-between;
+  display: flex;
   gap: 40px;
 }
 
 .header-flex-address {
   display: inline-flex;
+  gap: 40px;
 }
 
 .header-nav-link {
@@ -132,6 +135,9 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* section 2 */
@@ -149,14 +155,15 @@ img {
   color: var(--text);
 }
 .main-flex {
-  padding: 120px;
+  /* padding: 120px 0; */
   display: flex;
+  gap: 24px;
 }
 /* section3 */
 .section-doing {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
   justify-content: space-around;
 }
 
@@ -164,11 +171,12 @@ img {
 
 .section {
   color: var(--dark);
+  padding-bottom: 120px;
 }
 .section-team-flex {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
   justify-content: space-around;
 }
 
@@ -186,7 +194,7 @@ img {
 }
 .section-team-item {
   background-color: var(--light-background);
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 4px 4px;
   /* padding-bottom: 120px; */
 }
 .section-name {
@@ -196,12 +204,17 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding: 32px 0px;
+  padding: 0 0 8px 0;
 }
 .section-name-prof {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+}
+.section-item {
+  padding: 32px 16px;
+  text-align: center;
+  padding: 32px 0;
 }
 /* footer */
 .footer {
@@ -240,6 +253,10 @@ img {
 .hero-button {
   line-height: 1.5;
   cursor: pointer;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus,
