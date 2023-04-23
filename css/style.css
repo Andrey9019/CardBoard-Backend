@@ -104,8 +104,8 @@ img {
   display: flex;
   gap: 40px;
   align-items: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .header-flex-address {
