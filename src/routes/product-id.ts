@@ -33,7 +33,7 @@ router.get(
         return;
       }
 
-      res.json(product); // Повернення через res.json(), а не Response
+      res.json(product);
     } catch (error) {
       console.error("Error fetching product:", error);
       res.status(500).json({ error: "Internal Server Error" });
