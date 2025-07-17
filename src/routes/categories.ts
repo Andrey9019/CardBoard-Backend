@@ -24,6 +24,41 @@ const categoryConfig: CategoryConfigItem[] = [
   { name: "publisher", display_name: "Видавець", model: prisma.publisher },
 ];
 
+/**
+ * @swagger
+ * /api/categories:
+ *   get:
+ *     summary: Отримати всі категорії
+ *     tags: [Categories]
+ *     responses:
+ *       200:
+ *         description: Список категорій для фільтрації
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   name:
+ *                     type: string
+ *                     description: Ім'я категорії (наприклад, genres, types)
+ *                   display_name:
+ *                     type: string
+ *                     description: Відображуване ім'я категорії (наприклад, Жанри)
+ *                   values:
+ *                     type: array
+ *                     items:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: integer
+ *                         name:
+ *                           type: string
+ *                       description: Значення категорії (наприклад, Фентезі для genres)
+ *       500:
+ *         description: Внутрішня помилка сервера
+ */
 router.get("/", async (req: Request, res: Response) => {
   try {
     const categoryPromises = categoryConfig.map(({ model }) =>

@@ -1,11 +1,14 @@
 import express from "express";
 import dotenv from "dotenv";
+import swaggerConfig from "../swagger";
 import productsRouter from "./routes/products";
 import productIdRouter from "./routes/product-id";
 import categoriesRouter from "./routes/categories";
 
 dotenv.config();
 const app = express();
+
+swaggerConfig(app);
 
 app.use(express.json());
 
