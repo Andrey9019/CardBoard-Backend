@@ -1,6 +1,6 @@
 # Card&Board Backend
 
-Welcome to the Card&Board App Backend, the powerhouse behind the ultimate tool for managing your tasks efficiently. This backend repository handles all the server-side logic, data management, and API integrations needed to support Card&Board's seamless performance.
+Ласкаво просимо до бекенду додатку Card&Board, який є основою для ефективного управління вашими завданнями. Цей бекенд-репозиторій обробляє всю серверну логіку, управління даними та інтеграцію API, необхідну для підтримки безперебійної роботи Card&Board.
 
 ![Card&BoardScreenshot](/public/swagger.png)
 
