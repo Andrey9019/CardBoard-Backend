@@ -26,7 +26,7 @@ const categoryConfig: CategoryConfigItem[] = [
 
 /**
  * @swagger
- * /api/categories:
+ * /api/all_categories:
  *   get:
  *     summary: Отримати всі категорії
  *     tags: [Categories]
