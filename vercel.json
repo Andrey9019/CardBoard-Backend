@@ -5,11 +5,5 @@
     { "src": "/api/all_categories", "dest": "index.ts" },
     { "src": "/api/products", "dest": "index.ts" },
     { "src": "/api/products/:id", "dest": "index.ts" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
-    }
   ]
 }
