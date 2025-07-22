@@ -4,9 +4,14 @@ import swaggerConfig from "../swagger";
 import productsRouter from "./routes/products";
 import productIdRouter from "./routes/product-id";
 import categoriesRouter from "./routes/categories";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
+
+app.use(
+  cors({ origin: ["https://card-board.vercel.app", "http://localhost:3000"] })
+);
 
 swaggerConfig(app);
 
