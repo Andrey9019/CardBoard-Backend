@@ -10,9 +10,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(
-  cors({ origin: ["https://card-board.vercel.app", "http://localhost:3000"] })
-);
+app.use(cors());
 
 swaggerConfig(app);
 
