@@ -1,6 +1,6 @@
 import cors from "cors";
-import dotenv from "dotenv";
 import express from "express";
+import dotenv from "dotenv";
 import swaggerConfig from "../swagger";
 import productsRouter from "./routes/products";
 import productIdRouter from "./routes/product-id";
