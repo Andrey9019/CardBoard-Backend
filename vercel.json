@@ -1,33 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "src/index.ts", "use": "@vercel/node" }],
   "routes": [
-    {
-      "src": "/api/all_categories",
-      "dest": "index.ts"
-    },
-    {
-      "src": "/api/products",
-      "dest": "index.ts"
-    },
-    {
-      "src": "/api/products/:id",
-      "dest": "index.ts"
-    }
+    { "src": "/api/all_categories", "dest": "index.ts" },
+    { "src": "/api/products", "dest": "index.ts" },
+    { "src": "/api/products/:id", "dest": "index.ts" }
   ],
   "headers": [
     {
       "source": "/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
-      ]
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
   ]
 }
