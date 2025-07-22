@@ -1,10 +1,10 @@
-import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
+import express from "express";
 import swaggerConfig from "../swagger";
 import productsRouter from "./routes/products";
 import productIdRouter from "./routes/product-id";
 import categoriesRouter from "./routes/categories";
-import cors from "cors";
 
 dotenv.config();
 const app = express();
