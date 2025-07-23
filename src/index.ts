@@ -18,10 +18,6 @@ app.use("/api/products", productsRouter);
 app.get("/api/products/", productIdRouter);
 app.use("/api/all_categories", categoriesRouter);
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Products API!");
-});
-
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
