@@ -15,7 +15,7 @@ app.use(cors());
 swaggerConfig(app);
 
 app.use("/api/products", productsRouter);
-app.get("/api/products/", productIdRouter);
+app.use("/api/products", productIdRouter);
 app.use("/api/all_categories", categoriesRouter);
 
 app.get("/", (req, res) => {
