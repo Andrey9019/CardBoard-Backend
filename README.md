@@ -1,23 +1,49 @@
-# Card&Board Backend
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Ласкаво просимо до бекенду додатку Card&Board, який є основою для ефективного управління вашими завданнями. Цей бекенд-репозиторій обробляє всю серверну логіку, управління даними та інтеграцію API, необхідну для підтримки безперебійної роботи Card&Board.
+## Getting Started
 
-![Card&BoardScreenshot](/public/swagger.png)
+First, run the development server:
 
-_Посилання на swagger-документацію:_ https://cardboard-backend.onrender.com/api-docs/
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-_Посилання на фронт-енд репо:_ https://github.com/Andrey9019/CardBoard-Frontend
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Можливості
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Управління каталогом ігор:**
-  Отримання списку всіх настільних ігор із підтримкою фільтрації за назвою, жанрами, типами, механіками, рівнем складності, кількістю гравців, віковою групою, тривалістю та видавцем.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-  Доступ до детальної інформації про гру за її ID, включаючи опис, правила, рік випуску, ціну, знижку, кількість на складі, зображення та пов’язані категорії.
+## Learn More
 
-- **Категорії для фільтрації:**
-  Отримання всіх доступних категорій (жанри, типи, механіки, складність, кількість гравців, вікова група, тривалість, видавець) для використання у фільтрах на фронтенді.
+To learn more about Next.js, take a look at the following resources:
 
-## Мови та інструменти
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-![Languages and Tools](https://skills.syvixor.com/api/icons?i=nodejs,ts,expressjs,prisma,postgresql,vercel,swagger,cloudinary,eslint,prettier,postman,vscode&perline=12)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+"dependencies": {
+"cors": "^2.8.5",
+"dotenv": "^17.0.1",
+"swagger-jsdoc": "^6.2.8",
+"swagger-ui-express": "^5.0.1"
+},
+"devDependencies": {
+"@types/cors": "^2.8.19",
+"@types/express": "^5.0.3",
+"nodemon": "^3.1.10",
+"ts-node": "^10.9.2",
+}
