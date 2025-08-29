@@ -8,7 +8,8 @@
     "start": "next start --port 3001",
     "prisma:studio": "prisma studio",
     "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev"
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:generate-no-engine": "npx prisma generate --no-engine"
   },
   "dependencies": {
     "dotenv": "^17.0.1",

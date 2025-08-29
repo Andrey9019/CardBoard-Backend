@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "../../../lib/prisma-client";
+import { prisma } from "@/lib/prisma-client";
 
 interface QueryParams {
   query?: string;
@@ -72,6 +72,7 @@ export async function GET(req: Request) {
         publisher: true,
       },
     });
+    console.log("Products:", products);
     return NextResponse.json(products);
   } catch (error) {
     console.error("Error fetching products:", error);

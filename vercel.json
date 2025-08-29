@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [{ "src": "src/index.ts", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/api/all_categories", "dest": "src/index.ts" },
+    { "src": "/api/products", "dest": "src/index.ts" },
+    { "src": "/api/products/:id", "dest": "src/index.ts" },
+    { "src": "/api/warmup", "dest": "/src/routes/warmup.ts" }
+  ]
+}
