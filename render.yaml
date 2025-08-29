@@ -9,7 +9,7 @@ services:
     name: card-board-backend
     env: node
     plan: free
-    buildCommand: "npm install && npx prisma generate && npm run build"
+    buildCommand: "npm install && npx prisma generate --no-engine && npm run build"
     startCommand: "npm run start"
     envVars:
       - key: NODE_ENV
