@@ -45,5 +45,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 "@types/cors": "^2.8.19",
 "@types/express": "^5.0.3",
 "nodemon": "^3.1.10",
-"ts-node": "^10.9.2",
+"ts-node": "^10.9.2"
 }
