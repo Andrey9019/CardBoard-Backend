@@ -4,7 +4,7 @@
 
 ![Card&BoardScreenshot](/public/swagger.png)
 
-_Посилання на swagger-документацію:_ https://cardboard-backend.onrender.com/api-docs/
+_Посилання на swagger-документацію:_ https://cardboard-backend.onrender.com/api/docs
 
 _Посилання на фронт-енд репо:_ https://github.com/Andrey9019/CardBoard-Frontend
 
