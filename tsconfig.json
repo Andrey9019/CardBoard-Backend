@@ -36,8 +36,8 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    ".next/types/**/*.ts"
-, "src/app/api/docs/swagger.js"  ],
+    ".next/types/**/*.ts", 
+    "src/app/api/docs/swagger.js"  ],
   "exclude": [
     "node_modules",
     ".next"
