@@ -1,7 +1,7 @@
-import { prisma } from '@/lib/prisma-client';
-import { NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
+import { NextResponse } from 'next/server';
 import { z } from 'zod';
+import { prisma } from '@/lib/prisma-client';
 
 const signupSchema = z.object({
   email: z.email(),
