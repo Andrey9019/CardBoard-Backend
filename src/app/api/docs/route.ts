@@ -9,7 +9,8 @@ const options = {
       version: '1.0.0',
       description: 'API для інтернет-магазину настільних ігор Card&Board',
     },
-    servers: [{ url: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001' }],
+    servers: [{ url: 'http://localhost:3001' }],
+      // process.env.NEXT_PUBLIC_API_BASE_URL || 
   },
   apis: ['./src/app/api/**/route.ts'],
 };
