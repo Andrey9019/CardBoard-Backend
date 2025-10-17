@@ -17,7 +17,5 @@ const options = {
 const specs = swaggerJsdoc(options);
 
 export async function GET() {
-  const response = NextResponse.json(specs)
-  response.headers.set('Access-Control-Allow-Origin', '*')
-  return response;
+  return  NextResponse.json(specs)
 }
