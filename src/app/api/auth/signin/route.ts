@@ -9,6 +9,51 @@ const signinSchema = z.object({
   password: z.string().min(8),
 });
 
+/**
+ * @swagger
+ * /api/signin:
+ *   post:
+ *     summary: Логін користувача
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 example: "john@example.com"
+ *               password:
+ *                 type: string
+ *                 example: "password123"
+ *     responses:
+ *       200:
+ *         description: Успішний логін
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 token:
+ *                   type: string
+ *                   description: JWT токен
+ *                 user:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: integer
+ *                     email:
+ *                       type: string
+ *                     fullName:
+ *                       type: string
+ *       401:
+ *         description: Невірний email або пароль
+ *       500:
+ *         description: Внутрішня помилка сервера
+ */
+
 export async function POST(req: Request) {
   try {
     const { email, password } = signinSchema.parse(await req.json());

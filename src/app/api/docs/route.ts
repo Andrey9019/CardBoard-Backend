@@ -9,13 +9,15 @@ const options = {
       version: '1.0.0',
       description: 'API для інтернет-магазину настільних ігор Card&Board',
     },
-    servers: [{ url: 'http://localhost:3001' }],
+    servers: [{ url: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001' }],
   },
-  apis: ['./src/app/**/*.ts'],
+  apis: ['./src/app/api/**/route.ts'],
 };
 
 const specs = swaggerJsdoc(options);
 
 export async function GET() {
-  return NextResponse.json(specs);
+  const response = NextResponse.json(specs)
+  response.headers.set('Access-Control-Allow-Origin', '*')
+  return response;
 }
