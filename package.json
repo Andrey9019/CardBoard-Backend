@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "npx prisma generate && next build",
+    "build": "npx prisma generate && npm run generate-swagger && next build",
     "start": "next start --port 3001",
     "dev": "next dev --port 3001",
     "prisma:generate-no-engine": "npx prisma generate --no-engine",
@@ -12,7 +12,8 @@
     "prisma:studio": "prisma studio",
     "format": "biome format src --write",
     "lint": "biome lint src --fix",
-    "check": "biome check src"
+    "check": "biome check src",
+    "generate-swagger": "node ./generate-swagger.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
