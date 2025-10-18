@@ -2,7 +2,7 @@
 
 Ласкаво просимо до бекенду додатку Card&Board, який є основою для ефективного управління вашими завданнями. Цей бекенд-репозиторій обробляє всю серверну логіку, управління даними та інтеграцію API, необхідну для підтримки безперебійної роботи Card&Board.
 
-![Card&BoardScreenshot](/public/swagger.png)
+![Card&BoardScreenshot](/public/swagger.png) 
 
 _Посилання на swagger-документацію:_ https://cardboard-backend.onrender.com/api/docs
 
