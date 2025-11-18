@@ -81,7 +81,11 @@ export async function POST(req: Request) {
         token,
         user: { id: user.id, email: user.email, fullName: user.fullName },
       },
-      { status: 200 },
+      { status: 200 ,
+        headers: {
+          'Set-Cookie': `auth-token=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=604800${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`,
+        }
+      },
     );
   } catch (error) {
     console.error('Signin error:', error);

@@ -5,11 +5,23 @@ import { prisma } from '@/lib/prisma-client';
 export async function POST(req: Request) {
   try {
     const { token } = await req.json();
+    // const body = await req.json();
+    // let token = body.token;
+    // let { token } = await req.json();
+
+// if (!token) {
+      // const cookie = req.headers.get('cookie');
+      // token = cookie?.match(/auth-token=([^;]+)/)?.[1];
+    // }
+
+    if (!token) {
+      return NextResponse.json({ error: 'No token' }, { status: 401 });
+    }
 
     const decoded = jwt.verify(
       token,
       process.env.JWT_SECRET || 'fallback-secret',
-    ) as { userId: number; email: string };
+    ) as { userId: number };
 
     const user = await prisma.user.findUnique({
       where: { id: decoded.userId },
